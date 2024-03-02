@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PH Tube</title>
+    <title>SK Tube</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
       rel="stylesheet"
@@ -11,7 +11,44 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1 class="text-5xl">testing</h1>
+  <body class="w-[1280px] mx-auto">
+    <header>
+      <nav class="flex justify-between items-center mt-5">
+        <div class="logo text-4xl font-bold">
+          <h1 class="text-red-500">
+            SK <span class="text-gray-800">Tube</span>
+          </h1>
+        </div>
+        <div>
+          <button class="btn">Sort By View</button>
+        </div>
+        <div>
+          <button class="btn">Blog</button>
+        </div>
+      </nav>
+      <hr class="mt-6 border-2 border-gray-500 rounded-sm" />
+    </header>
+    <main>
+      <section class="mt-12">
+        <div id="error-element" class="mt-12">
+          <!-- <img class="mx-auto" src="./Icon.png" alt="" /> -->
+          <h1 class="text-3xl mt-3 text-center">
+            Opps!! Sorry, There are no content There are no content
+          </h1>
+        </div>
+      </section>
+      <!-- button -->
+      <section class="flex justify-center items-center">
+        <div id="btn-container" class="mt-12 space-x-4 ml-24">
+          <!-- btn -->
+        </div>
+      </section>
+      <!-- card -->
+      <div id="card-container" class="grid grid-cols-3"></div>
+    </main>
+    <footer>
+      <!--  -->
+    </footer>
+    <script src="./app.js"></script>
   </body>
 </html>
